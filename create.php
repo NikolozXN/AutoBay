@@ -29,7 +29,7 @@ $sanitizedFeedback = filter_input(INPUT_POST, 'feedback', FILTER_SANITIZE_FULL_S
 
 
 
-    <form action="<?php htmlspecialchars($_SERVER['PHP_SELF'])?>" method="POST">
+    <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method="POST">
         <div class="mb-6">
             <label for="fullname" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
                 Full name</label>
